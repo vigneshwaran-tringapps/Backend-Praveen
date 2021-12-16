@@ -17,8 +17,8 @@ module.exports = (sequelize, DataTypes) => {
     userId: DataTypes.UUID,
     CarId: DataTypes.INTEGER,
     Payment_Id: DataTypes.INTEGER,
-    To_location: DataTypes.STRING,
-    From_location: DataTypes.STRING,
+    ToLocation: DataTypes.STRING,
+    FromLocation: DataTypes.STRING,
     Date: DataTypes.DATE,
     Payment_status: DataTypes.STRING
   }, {

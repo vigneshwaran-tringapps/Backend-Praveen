@@ -7,8 +7,8 @@ var addTrip = async (req,resp) =>{
    // const {CarId,From_location,To_location,Date} = req.body;
 
   let details={
-    From_location:req.body.floc,
-    To_location:req.body.tloc,
+    FromLocation:req.body.floc,
+    ToLocation:req.body.tloc,
     Date:req.body.dte
 }
     try{
@@ -23,7 +23,7 @@ var addTrip = async (req,resp) =>{
 var addTripRound = async (req,resp) =>{
  
    let details={
-     From_location:req.body.floc,
+     FromLocation:req.body.floc,
      Date:req.body.dte
  }
      try{

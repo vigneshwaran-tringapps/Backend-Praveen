@@ -6,7 +6,7 @@ const user = require("../models/user");
 
 //function to add new user
 var addUser = async(req,resp) =>{
-const {name,age,mailId,phoneNumber} = req.body;
+const {name,email,password,phoneNo} = req.body;
     try{
     const users = await User.create({name,age,mailId,phoneNumber});
     return resp.status(200).json(users);

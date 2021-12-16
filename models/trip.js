@@ -21,11 +21,11 @@ module.exports = (sequelize, DataTypes) => {
   primaryKey:true,
   allowNull:false 
   },
-From_location:{
+FromLocation:{
 type:DataTypes.STRING,
 allowNull:false,
 },
-To_location:{
+ToLocation:{
 type:DataTypes.STRING,
 allowNull:true,
 },

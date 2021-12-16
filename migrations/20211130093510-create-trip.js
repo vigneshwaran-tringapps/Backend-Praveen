@@ -30,11 +30,11 @@ module.exports = {
        primaryKey:true,
        allowNull:false
       },
-      From_location: {
+      FromLocation: {
         type: Sequelize.STRING,
         allowNull:false,
       },
-      To_location: {
+      ToLocation: {
         type: Sequelize.STRING,
         allowNull:true,
       },

@@ -1,10 +1,10 @@
 
-const {Register} = require ("../models");
+const {Registers} = require ("../models");
  
 var addUserVal = async (req,resp) =>{
     const {name,email,password,phoneNo} = req.body;
    try{
-    const values= await Register.create({name,email,password,phoneNo});
+    const values= await Registers.create({name,email,password,phoneNo});
       return resp.status(200).json(values);
    }catch(e){
        console.log(e);
@@ -14,7 +14,7 @@ var addUserVal = async (req,resp) =>{
  
 var getUser = async (req,resp) =>{
     try{
-        const storedval = await Register.findAll();
+        const storedval = await Registers.findAll();
         return resp.status(200).json(storedval);
     }
     catch(e){
@@ -26,7 +26,7 @@ var getUser = async (req,resp) =>{
 var loginconnect = async (req,resp) =>{
     const { user_email,password}=req.body;
     try{
-        const users=await Register.findOne({where:{email:user_email}});
+        const users=await Registers.findOne({where:{email:user_email}});
         if(users)
         {
             if(users.password===password)

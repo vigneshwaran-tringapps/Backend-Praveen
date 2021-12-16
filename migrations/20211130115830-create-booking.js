@@ -17,10 +17,10 @@ module.exports = {
       Payment_Id: {
         type: Sequelize.INTEGER
       },
-      To_location: {
+      ToLocation: {
         type: Sequelize.STRING
       },
-      From_location: {
+      FromLocation: {
         type: Sequelize.STRING
       },
       Date: {
